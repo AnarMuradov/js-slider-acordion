@@ -1,0 +1,22 @@
+body{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+.list .head{
+    background-color: aqua;
+    padding: 30px;
+}
+.list .info1{
+    overflow: hidden;
+    background-color: red;
+    padding: 30px;
+    height: 10px;
+}
+.info{
+    overflow: hidden;
+    background-color: red;
+    padding: 0px;
+    height: 0px;
+    transition: all 1s;
+}

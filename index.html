@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="ToDoList">
+        <input type="text">
+        <button class="btn">Add</button>
+
+        <ul class="list">
+            <li>yaz</li>
+        </ul>
+
+
+    </div>
+
+
+
+
+    <script>
+        const input = document.querySelector(".ToDoList input")
+        const button = document.querySelector(".btn")
+        const ul =document.querySelector(".list")
+
+        button.addEventListener("click",function myf(){
+            const li =document.createElement("li")
+            ul.append(li)
+            const txt =input.value
+            li.textContent=txt
+            input.value=""
+
+            li.addEventListener("click", function myf2(){
+                li.remove()
+               
+            })
+                const arr =[{todo:li.textContent}]
+                localStorage.setItem("ToDoList",JSON.stringify(arr))
+                console.log(JSON.parse(localStorage.getItem("ToDoList")));
+        })
+
+        
+
+        // const arr =[{naton:"lak"} ,{nation:"osetiya" }]
+        // localStorage.setItem("nat",JSON.stringify(arr))
+        // console.log(JSON.parse(localStorage.getItem("nat")));
+
+
+    </script>
+</body>
+</html>

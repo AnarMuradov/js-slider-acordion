@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<style>
+    body{
+        position: relative;
+    }
+    img{
+        width: 500px;
+        height: 500px;
+        position: absolute;
+        opacity: 0;
+    }
+    i{
+        position: absolute;
+        z-index: 100;
+    }
+    .fa-arrow-right{
+        left: 470px;
+        top: 250px;
+    }
+    .fa-arrow-left{
+        left: 10px;
+        top: 250px;
+
+    }
+    
+    .index2{
+        opacity: 1;
+        transition: opacity 1s;
+    }
+    
+</style>
+<body>
+    <i class="fa-solid fa-arrow-right"></i>
+    <i class="fa-solid fa-arrow-left"></i>
+
+<div class="container" style="width: 500px; height: 500px;" >
+    <img class="index1 index2" src="https://imgv3.fotor.com/images/slider-image/a-man-holding-a-camera-with-image-filter.jpg" alt="">
+    <img class="index1" src="https://www.seiu1000.org/sites/main/files/main-images/camera_lense_0.jpeg" alt="">
+    <img class="index1" src="https://www.simplilearn.com/ice9/free_resources_article_thumb/what_is_image_Processing.jpg" alt="">
+</div>
+
+
+    <script src="./script.js"></script>
+</body>
+</html>
